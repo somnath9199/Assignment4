@@ -1,7 +1,7 @@
 public class Q5 {
     public static void main(String[] args) {
       
-        Runtime runtime = Runtime.getRuntime();
+       Runtime runtime = Runtime.getRuntime();
         
    
         System.out.println("Total memory before object creation: " + runtime.totalMemory());
@@ -27,6 +27,8 @@ public class Q5 {
         obj1 = null;
         obj2 = null;
 
+        //obj1 = obj2;
+
    
         System.gc();
 
@@ -43,8 +45,6 @@ class DataHolder {
         this.intValue = intValue;
         this.doubleValue = doubleValue;
     }
-
-
     public void updateInt(int newValue) {
         this.intValue = newValue;
     }

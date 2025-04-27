@@ -12,9 +12,11 @@ class UnreachableObject{
         this.objectname = objectname;
     }
     void show(){
+        UnreachableObject u1 = new UnreachableObject("Object2");
         display();
     }
     void display(){
+        UnreachableObject u3 = new UnreachableObject("Object3");
         System.out.println("Object is "+ objectname);
     }
     @Override
@@ -22,3 +24,13 @@ class UnreachableObject{
         System.out.println("Garbage collector Suceessfully called for "+ objectname);
     }
 }
+
+
+//garbage collector(gc)
+
+//nested function call
+//Reassign reference
+//nullfy
+
+
+

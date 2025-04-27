@@ -16,3 +16,8 @@ class ReassigningReference{
         System.out.println("Garbage Collector is succesfully called for "+Objectname);
     }
 }
+
+// r1 ---->Object1
+//r2  ----->object2
+ //r1 ----->object2
+ //r2 ----->object2

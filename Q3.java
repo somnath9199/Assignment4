@@ -5,13 +5,19 @@ public class Q3 {
         System.gc();
     }
 }
-class NullifiedRefrence{
+class NullifiedRefrence {
     private String Objectname;
-    NullifiedRefrence(String Objectname){
+    NullifiedRefrence(String Objectname) {
         this.Objectname = Objectname;
     }
     @Override
-    protected void finalize() throws Throwable{
-        System.out.println("Garbage collector succesfully called for "+ Objectname);
+    protected void finalize() throws Throwable {
+        System.out.println("Garbage collector succesfully called for " + Objectname);
     }
 }
+
+
+
+//what is AnonymousObject??
+
+//Student s1 = new Student("Kunal");
